@@ -69,6 +69,7 @@ jobs:
         pip install git+git://github.com/fastai/fastcore.git
         pip install -Uq fastprogress
         pip install -Uqe .[dev]
+        make test
     
     - name: check for cache hit
       uses: actions/cache@v2
